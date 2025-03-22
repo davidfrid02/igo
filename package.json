@@ -3,10 +3,10 @@
     "displayName": "iGo - Smart Go Tools",
     "description": "Professional Go development tools with intelligent interface navigation, implementation tracking, recursive method detection, and smart string formatting. Enhances productivity with seamless integration and powerful features.",
     "version": "0.1.0",
-    "publisher": "davidfried",
+    "publisher": "davidfried007",
     "author": {
         "name": "David Fried",
-        "url": "https://github.com/davidfried"
+        "url": "https://github.com/davidfrid02"
     },
     "engines": {
         "vscode": "^1.85.0"
@@ -15,7 +15,6 @@
         "Programming Languages",
         "Formatters",
         "Other",
-        "Programming Languages",
         "Snippets",
         "Visualization"
     ],
@@ -134,16 +133,16 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/davidfried/golang-string-break"
+        "url": "https://github.com/davidfrid02/igo"
     },
     "bugs": {
-        "url": "https://github.com/davidfried/golang-string-break/issues"
+        "url": "https://github.com/davidfrid02/igo/issues"
     },
-    "homepage": "https://github.com/davidfried/golang-string-break#readme",
+    "homepage": "https://github.com/davidfrid02/igo#readme",
     "license": "MIT",
     "pricing": "Free",
-    "qna": "https://github.com/davidfried/golang-string-break/issues",
+    "qna": "https://github.com/davidfrid02/igo/issues",
     "sponsor": {
-        "url": "https://github.com/sponsors/davidfried"
+        "url": "https://github.com/sponsors/davidfrid02"
     }
 }
