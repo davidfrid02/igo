@@ -1,0 +1,149 @@
+{
+    "name": "igo",
+    "displayName": "iGo - Smart Go Tools",
+    "description": "Professional Go development tools with intelligent interface navigation, implementation tracking, recursive method detection, and smart string formatting. Enhances productivity with seamless integration and powerful features.",
+    "version": "0.1.0",
+    "publisher": "davidfried",
+    "author": {
+        "name": "David Fried",
+        "url": "https://github.com/davidfried"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Formatters",
+        "Other",
+        "Programming Languages",
+        "Snippets",
+        "Visualization"
+    ],
+    "keywords": [
+        "go",
+        "golang",
+        "interface",
+        "navigation",
+        "smart",
+        "productivity",
+        "formatting",
+        "implementation",
+        "method tracking",
+        "code analysis"
+    ],
+    "icon": "./images/icon.png",
+    "galleryBanner": {
+        "color": "#00ADD8",
+        "theme": "dark"
+    },
+    "badges": [
+        {
+            "url": "https://img.shields.io/visual-studio-marketplace/v/davidfried.igo",
+            "href": "https://marketplace.visualstudio.com/items?itemName=davidfried.igo",
+            "description": "VS Marketplace Version"
+        },
+        {
+            "url": "https://img.shields.io/visual-studio-marketplace/d/davidfried.igo",
+            "href": "https://marketplace.visualstudio.com/items?itemName=davidfried.igo",
+            "description": "VS Marketplace Downloads"
+        }
+    ],
+    "activationEvents": [
+        "onLanguage:go",
+        "workspaceContains:**/*.go"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "golang-string-break.breakString",
+                "title": "iGo: Break String",
+                "category": "iGo"
+            },
+            {
+                "command": "golang-string-break.navigateToInterface",
+                "title": "iGo: Navigate to Interface",
+                "category": "iGo"
+            },
+            {
+                "command": "golang-string-break.navigateToMethod",
+                "title": "iGo: Navigate to Method",
+                "category": "iGo"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "golang-string-break.breakString",
+                "key": "enter",
+                "mac": "enter",
+                "when": "editorTextFocus && editorLangId == go && isInsideGoString"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "iGo",
+            "properties": {
+                "igo.enableHoverInfo": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable/disable hover information for interfaces and implementations"
+                },
+                "igo.showImplementationCount": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Show/hide implementation count in the editor"
+                },
+                "igo.enableRecursiveMethodDetection": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable/disable recursive method detection"
+                }
+            }
+        },
+        "languages": [
+            {
+                "id": "go",
+                "extensions": [
+                    ".go"
+                ],
+                "aliases": [
+                    "Go",
+                    "golang"
+                ]
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js",
+        "package": "vsce package",
+        "publish": "vsce publish"
+    },
+    "devDependencies": {
+        "@types/vscode": "^1.85.0",
+        "@types/node": "18.x",
+        "@typescript-eslint/eslint-plugin": "^6.13.1",
+        "@typescript-eslint/parser": "^6.13.1",
+        "eslint": "^8.54.0",
+        "typescript": "^5.3.2",
+        "@vscode/vsce": "^2.24.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/davidfried/golang-string-break"
+    },
+    "bugs": {
+        "url": "https://github.com/davidfried/golang-string-break/issues"
+    },
+    "homepage": "https://github.com/davidfried/golang-string-break#readme",
+    "license": "MIT",
+    "pricing": "Free",
+    "qna": "https://github.com/davidfried/golang-string-break/issues",
+    "sponsor": {
+        "url": "https://github.com/sponsors/davidfried"
+    }
+}
