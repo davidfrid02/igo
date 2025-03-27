@@ -60,7 +60,7 @@ This extension contributes the following settings:
 
 ## Known Issues
 
-Please report any issues on our [GitHub repository](https://github.com/davidfried/golang-string-break/issues).
+Please report any issues on our [GitHub repository](https://github.com/davidfrid02/igo/issues).
 
 ## Release Notes
 
